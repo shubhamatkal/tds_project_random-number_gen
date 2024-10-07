@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Number Generator</h1>
+        <div class="input-group">
+            <label for="min">Minimum:</label>
+            <input type="number" id="min" value="1">
+        </div>
+        <div class="input-group">
+            <label for="max">Maximum:</label>
+            <input type="number" id="max" value="100">
+        </div>
+        <button id="generate">Generate Random Number</button>
+        <div id="result">
+            <div id="animation"></div>
+            <p id="number"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Shubham Atkal 23f1002838@ds.study.iitm.ac.in (TDS project)</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
